@@ -1,8 +1,13 @@
+import MaxWidthWrapper from "@/components/MaxWidthWrapper"
 
 const AdminPage = () => {
     return (
         <div>
-            AdminPage
+            <MaxWidthWrapper className="py-20">
+                <div>
+                    AdminPage
+                </div>
+            </MaxWidthWrapper>
         </div>
     )
 }
