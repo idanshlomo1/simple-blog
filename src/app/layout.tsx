@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "sonner";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -38,7 +39,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-
+          <Toaster position="top-center" richColors />
         </ThemeProvider>
       </body>
     </html>
